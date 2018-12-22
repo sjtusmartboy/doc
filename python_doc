@@ -1,0 +1,13 @@
+## 查看
+update-alternatives --list python
+
+如果出现 update-alternatives: error: no alternatives for python，执行如下操作
+
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+update-alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
+update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+update-alternatives: using /usr/bin/python3.6 to provide /usr/bin/python (python) in auto mode
+
+
+默认python切换
+update-alternatives --config python
