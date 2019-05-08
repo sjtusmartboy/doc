@@ -11,3 +11,7 @@ update-alternatives: using /usr/bin/python3.6 to provide /usr/bin/python (python
 
 默认python切换
 update-alternatives --config python
+
+
+virtualenv -p /usr/bin/python3 py3env
+source py3env/bin/activate
